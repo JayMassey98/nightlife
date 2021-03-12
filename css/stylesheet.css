@@ -1,0 +1,497 @@
+/*-----------------------
+Base Styles
+------------------------*/
+
+html { scroll-padding-top: 5.95em; }
+
+body {
+
+    margin-top: 4em;
+	font-family: "Monorale", "Raleway", "Calibri", sans-serif;
+	font-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #E6E6E6;
+    overflow-y: scroll;
+}
+
+main {
+
+    float: left;
+    width: 100%;
+}
+
+#center {
+
+    width: 814px;
+    margin: auto;
+}
+
+#wrapper {
+
+    margin 0;
+    overflow: hidden;
+    padding-bottom: 1.25em;
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.25em;
+    color: #fff;
+    background: #ccc;
+    text-align: center;
+    padding: 0.5em 0em 0.5em 0em;
+    box-shadow: 0em 1em 1.5em 1em lightgray;
+}
+
+#footer_large {
+
+    position: relative;
+
+}
+
+#banner {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    line-height: 1.2em;
+    background-color: #404040;
+/*    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 40%, rgba(85,85,85,1) 60%); */
+
+}
+
+/* -----------------------
+Text Sizes
+------------------------*/
+
+h1 {
+
+    font-style: italic;
+}
+
+h2 {
+
+    color: #c00;
+    font-size: 1.375em;
+    margin: 0 0 1em 0;
+}
+
+h3 {
+
+	margin: 0.618em 0 0 0;
+    font-size: 1em; /* 1.125em */
+	line-height: 1.618em;
+    text-align: center;
+}
+
+p {
+
+	margin: 0 0 0 0;
+    font-size: 1em; /* .875em */
+	line-height: 1.618em;
+}
+
+a { text-decoration: none; }
+a:link { color: #C00; }
+a:visited { color: #C00; }
+a:focus { color: #C00; }
+a:active { color: #C00; }
+
+a:hover {
+
+    color: #C00;
+    transition: color 0.2s ease 0s;
+}
+
+a[href^="#top"] {
+
+	font-size: .75em;
+}
+
+li {
+
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1em; /* 1.1em */
+	line-height: 1.1em;
+}
+
+/*-----------------------
+Added Font
+------------------------*/
+
+@font-face {
+
+    font-family: Monorale;
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.rawgit.com/samvk/monorale-raleway-sober/master/woff/Monorale-Regular.woff') format('woff');
+}
+
+/* -----------------------
+Article Posts
+------------------------*/
+
+article {
+
+	padding-top: 1.5em;
+    overflow: hidden;
+    box-shadow: 0 1em 1em -1em gray;
+}
+
+.post {
+
+    padding: 1.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C6C6C6;
+    background-color: rgb(255, 255, 255);
+}
+
+article#blank-module {display: block}
+article#agile-methodology {display: none}
+article#data-structures {display: none}
+article#embedded-systems {display: none}
+
+/* -----------------------
+Table Styles
+------------------------*/
+
+table {
+
+	border-spacing: 0;
+	border-collapse: collapse;
+    table-layout: fixed;
+	margin: 1em 0 1.618em 0;
+}
+
+table#last {
+
+    margin: 0 0 0 0;
+}
+
+tbody tr:nth-child(odd) {
+
+	background-color: #E6E6E6;
+}
+
+th, td {
+
+	font-size: 1em;
+    padding: .6em 0 .6em 0;
+	border: 1px solid #C6C6C6;
+	vertical-align: top;
+	text-align: center;
+	white-space: nowrap;
+}
+
+td:first-child {
+
+    width: 16.18em;
+}
+
+td:not(:first-child):not(:last-child) {
+
+    width: 10em;
+}
+
+td:last-child {
+
+    width: 16.18em;
+}
+
+.aligned-divs table {
+
+    margin: 0.5em -2px 0.86em 0;
+
+}
+
+.aligned-divs td:not(:first-child) {
+
+    width: 30em;
+}
+
+/**Responsive table styles sourced from http://maxdesign.com.au/articles/simple-responsive-table/
+*See link for more responsive table styling options, explanation etc.
+*/
+
+.table-container /*Add a scrollbar to a table for small screen devices*/ {
+
+	width: 100%;
+	overflow-x: auto;
+}
+
+.table-container::-webkit-scrollbar /*Add the scrollbar to an iOS mobile browser*/ {
+
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+}
+
+.table-container::-webkit-scrollbar-thumb /*Add the scrollbar to an iOS mobile browser*/ {
+
+	border-radius: 8px;
+	border: 3px solid #fff;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+/* -----------------------
+Image and Video Layout
+------------------------*/
+
+img {
+
+	display: block;
+    max-width: 100%;
+    border: 1px solid;
+    margin-top: 0.5em;
+
+}
+
+img.comparison {
+
+    display: inline-block;
+    max-width: 100%;
+
+}
+
+.aligned-div-left {
+
+    max-width: 48.18%;
+    float: left;
+}
+
+.aligned-div-right {
+
+    padding-left: 1.625em;
+    max-width: 48.18%;
+    float: left;
+}
+
+.iframe-container iframe {
+
+    top: 0;
+	left: 0;
+	height: 29.84em;
+    width: 99.8%;
+    margin-top: 0.5em;
+    border: 1px solid #404040;
+}
+
+/* --------------------------------------------------
+Menu Navigation - vertical layout for smaller screens
+---------------------------------------------------*/
+
+#banner {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+#menu {
+
+    padding: 1.1em 0em 1.1em 0em;
+	text-transform: uppercase;
+	font-weight: bold;
+    font-size: 1.21em;
+    text-align: right;
+}
+
+#logo h1 {
+
+    float: left;
+    font-size: 2.3em;
+    text-align: left;
+    padding: 0.6em 0em 0.6em 0.7em;
+    margin: 0 0 0 0;
+}
+
+#logo a:link { color: #fff; }
+#logo a:visited { color: #fff; }
+#logo a:focus { color: #c00000; }
+#logo a:active { color: #c00000; }
+#logo a:hover { color: #ff0000;
+                transition: color 0.2s ease 0s;
+}
+
+#menu li {
+
+    display: inline;
+    margin: 0 .5em 0 .5em;
+}
+
+#menu ul {
+
+    margin: 0;
+	padding: 0 0.8em 0 0;
+	list-style: none;
+
+}
+
+#menu a { padding: 0; }
+#menu a:link { color: #fff; }
+#menu a:visited { color: #fff; }
+#menu a:hover { color: #ff0000;
+                transition: color 0.2s ease 0s; }
+#menu a:active { color: #c00; }
+
+-
+
+/* ---------------------------------------------------
+Wider screens - i.e. desktop, laptop, tablet landscape
+----------------------------------------------------*/
+
+@media (min-width: 51em)
+{
+	.banner
+    {
+        padding: 1.5em 3em 1.5em 3em;
+
+    }
+
+    main
+	{
+		float: left;
+		width: 100%;
+	}
+
+    .article
+    {
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+	footer
+    {
+        padding: 10px 0em 0em 0em;
+        bottom: 0;
+        right: 0;
+    }
+
+	#menu li
+	{
+		display: inline;
+		margin: 0 0 0 0;
+	}
+
+	#menu a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+        color: #fff;
+	}
+}
+
+/* ----------------------
+Mobile screens - portrait
+-----------------------*/
+
+@media (max-width : 58.9em)
+{
+    #menu li:nth-child(1) { display: none; }
+}
+
+@media (max-width : 52em)
+{
+    #menu li
+    {
+        display: none;
+    }
+
+    #banner
+    {
+        position: absolute;
+        padding-bottom: 1px;
+    }
+
+    #banner
+    {
+        width: 100%;
+        text-align: center;
+        background-position: center;
+    }
+
+    #center
+    {
+        width: 100%;
+    }
+
+    main
+    {
+        width: 100%;
+    }
+
+    th, td
+    {
+        font-size: 100%;
+        padding: .2em 1em .2em 1em;
+        border: 1px solid #ddd;
+        vertical-align: top;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #footer
+    {
+        margin: 0.25em 0 0 0;
+        position: relative;
+    }
+
+    img.comparison
+    {
+        display: inline;
+        max-width: 100%;
+    }
+
+    .aligned-div-left
+    {
+        max-width: 100%;
+        float: left;
+    }
+
+    .aligned-div-right
+    {
+        padding-left: 0em;
+        max-width: 100%;
+    }
+
+    .aligned-divs table
+    {
+        align-content: center;
+        max-width: 100.2%;
+        margin: 0 0 0.86em 0;
+    }
+
+    .iframe-container iframe
+    {
+        max-width: 99.6%;
+        height: 29.83em;
+
+    }
+
+}
+
+/*float/clear classes */
+
+.fltrt
+{  /* this class can be used to float an element e.g. image right in the page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: .5em;
+}
+.fltlt
+{ /* this class can be used to float an element e.g. image left in the page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: .5em;
+}
+.clear
+{ /* this class can be placed on an element or empty div as the final element following the last floated div */
+	clear: both;
+}
